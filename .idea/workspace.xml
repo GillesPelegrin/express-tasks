@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3b66592-d2de-4e8e-8598-5c01fa1f4e57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/enviremont/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enviremont/.env.test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enviremont/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/enviremont/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enviremont/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/enviremont/.env.test" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1644307369174</updated>
       <workItem from="1644307370450" duration="2406000" />
-      <workItem from="1644314095315" duration="9525000" />
+      <workItem from="1644314095315" duration="9897000" />
     </task>
     <task id="LOCAL-00001" summary="remove node modules">
       <created>1644307515367</created>
@@ -124,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644317855726</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding jest and environments, still need to update">
+      <created>1644324196145</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644324196145</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +137,7 @@
     <MESSAGE value="remove dist" />
     <MESSAGE value="add file structure + task routes" />
     <MESSAGE value="add basic acceptance test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add basic acceptance test" />
+    <MESSAGE value="adding jest and environments, still need to update" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding jest and environments, still need to update" />
   </component>
 </project>
