@@ -1,9 +1,9 @@
 import express from 'express'
+import taskRoute from './routes/task-route'
+
 const app = express()
 const port = 5000
 
+app.use(taskRoute);
 
-app.get('/', (_, res) => {
-    res.status(200).send("this is a body")
-})
 app.listen(port, () => console.log(`Running on port ${port}`))
