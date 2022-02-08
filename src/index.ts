@@ -1,9 +1,10 @@
 import express from 'express'
 import taskRoute from './routes/task-route'
 
-// should adapt env depending for developmnet / tests / production
-// require('dotenv').config({ path: `./enviremont/.env.${process.env.NODE_ENV}` })
-require('dotenv').config({ path: `./enviremont/.env.development` })
+// should adapt env depending for development / tests / production
+// require('dotenv').config({ path: `./environment/.env.${process.env.NODE_ENV}` })
+require('dotenv').config({ path: `./environment/.env.development` })
+require('./configurations/db-configuration')
 
 const app = express()
 

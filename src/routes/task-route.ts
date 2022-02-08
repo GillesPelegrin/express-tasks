@@ -1,4 +1,6 @@
 import * as express from 'express';
+import TaskDTO from '../dto/task-dto';
+import {saveTask} from '../controllers/task-controller';
 let router = express.Router();
 
 router.get('/tasks', function (req: express.Request, res: express.Response) {
@@ -6,6 +8,7 @@ router.get('/tasks', function (req: express.Request, res: express.Response) {
 })
 
 router.post('/tasks', function (req: express.Request, res: express.Response) {
+    saveTask(req.body as TaskDTO);
     res.send('Created new tasks');
 })
 
