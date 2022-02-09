@@ -48,3 +48,34 @@ Domain becomes better present in the tests  |
 ### Restfull
 
 - [ ] could add in the Api /api/v1 
+
+### Clean code
+
+- [x] add estlint -> tslint is deprecated 
+
+
+### Errors
+
+- [ ] find out how to handle errors
+
+
+### Deploy 
+
+- [ ] find out how to deploy to some kind of jenkins ?
+- [ ] find out how to deploy to an env
+
+### Envirements
+
+- [ ] add specific env files -> test | development | production
+- [ ] fix that NODE_ENV is not set - for some reason 
+
+### Devops
+
+- [ ] choose build platform
+- [ ] add script so you can run your test in a pipeline
+
+### Random taks
+
+- [ ] clean up / understand your babel vs tsc, your jest that use babbel but your application use tsc
+- [ ] eslint is at the moment a pointed to a specific version -> some weird errors, check if you can switch to eslint v8.8
+- [ ] add a command in package.json so you can start your docker container mongoDB
