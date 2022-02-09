@@ -11,11 +11,11 @@ class Task {
 }
 
 
-let taskModelSchema = new Schema<Task>({
+const taskModelSchema = new Schema<Task>({
     message: {type: String, required: true},
     creationDate: {type: Date, required: true}
 });
 
-let TaskModel = model<Task>('Task', taskModelSchema);
+const TaskModel = model<Task>('Task', taskModelSchema);
 
 export {TaskModel, Task};

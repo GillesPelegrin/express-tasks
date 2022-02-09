@@ -1,7 +1,7 @@
 import * as express from 'express';
-import TaskDTO from '../dto/task-dto';
-import {getAllTasks, saveTask} from '../controllers/task-controller';
-let router = express.Router();
+import {getAllTasks} from '../controllers/task-controller';
+
+const router = express.Router();
 
 router.get('/tasks', function (req: express.Request, res: express.Response) {
     res.send(getAllTasks());
