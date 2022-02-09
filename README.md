@@ -14,7 +14,7 @@ You will find a basic CRUD for tasks and some authorization.
 - [x] choose DB -> MongoDb
 - [x] setup docker container so we can start locally a DB to test to
 - [x] find out how to connect to the DB
-- [ ] write / read your first document
+- [x] write / read your first document
 - [ ] make sure that the DB is first launched before the application
 
 ### Testing | Tdd | Bdd
@@ -39,6 +39,7 @@ Domain becomes better present in the tests  |
 
 - [x] find out how to create a domain model
 - [ ] add validations so your model can not come in a invalid state
+- [ ] Builder vs constructor - need to discuss as long we don't have setters
 
 ### Modules | Onion architecture
 
@@ -46,6 +47,7 @@ Domain becomes better present in the tests  |
 - [ ] require vs import -> find out what's best and refactor
 - [ ] wrap everything into a class and export vs functions in function export ? -> refactor
 - [ ] make that controller layer can not speak to the domain layer without going through the service layer 
+- [ ] move mappers to DTO's 
 
 ### Restfull
 
@@ -66,10 +68,22 @@ Domain becomes better present in the tests  |
 - [ ] find out how to deploy to some kind of jenkins ?
 - [ ] find out how to deploy to an env
 
-### Envirements
+### Environments
 
 - [ ] add specific env files -> test | development | production
 - [ ] fix that NODE_ENV is not set - for some reason 
+
+### DTO
+```
+Should DTO stay an interface or a class
+
+depends do we want to add validation here or does the validation be in the domain.
+Will adapt/refactor if we introduce error handling
+```
+
+### Transactions
+
+- [ ] find out how to work with transactions
 
 ### Devops
 

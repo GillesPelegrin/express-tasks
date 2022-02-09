@@ -1,12 +1,21 @@
 import {model, Schema} from 'mongoose';
 
 class Task {
-    private message: string;
-    private creationDate: Date;
+    private _message: string;
+    private _creationDate: Date;
 
     constructor( message: string) {
-        this.message = message;
-        this.creationDate = new Date();
+        this._message = message;
+        this._creationDate = new Date();
+    }
+
+
+    get message(): string {
+        return this._message;
+    }
+
+    get creationDate(): Date {
+        return this._creationDate;
     }
 }
 
