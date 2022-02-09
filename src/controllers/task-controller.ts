@@ -7,4 +7,8 @@ async function saveTask(task: TaskDTO) {
     await taskRepository().save(mapTask(task))
 }
 
-export {saveTask}
+async function getAllTasks() {
+    await taskRepository().getAll();
+}
+
+export {saveTask, getAllTasks}

@@ -6,8 +6,8 @@ let mongoDB = 'mongodb://localhost:27017';
 mongoose.connect(mongoDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    user: 'root',
-    pass: 'rootpassword'
+    user: process.env.DB_USER,
+    pass: process.env.DB_PASSWORD
 });
 
 //Get the default connection
