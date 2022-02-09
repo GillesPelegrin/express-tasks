@@ -12,7 +12,9 @@ You will find a basic CRUD for tasks and some authorization.
 ### DB
 
 - [x] choose DB -> MongoDb
-- [ ] find out how to connect to the DB
+- [x] setup docker container so we can start locally a DB to test to
+- [x] find out how to connect to the DB
+- [ ] write / read your first document
 - [ ] make sure that the DB is first launched before the application
 
 ### Testing | Tdd | Bdd

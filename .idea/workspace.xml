@@ -85,7 +85,7 @@
       <workItem from="1644307370450" duration="2406000" />
       <workItem from="1644314095315" duration="12936000" />
       <workItem from="1644334626661" duration="10643000" />
-      <workItem from="1644397082096" duration="5979000" />
+      <workItem from="1644397082096" duration="7083000" />
     </task>
     <task id="LOCAL-00001" summary="remove node modules">
       <created>1644307515367</created>
@@ -171,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644429767623</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adapt readme">
+      <created>1644430350812</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644430350812</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +197,7 @@
     <MESSAGE value="fix eslint" />
     <MESSAGE value="fixing some eslint errors" />
     <MESSAGE value="adding readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding readme" />
+    <MESSAGE value="adapt readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="adapt readme" />
   </component>
 </project>
