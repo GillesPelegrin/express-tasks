@@ -3,7 +3,7 @@
     "target": "es6",
     "module": "commonjs",
     "baseUrl": "./",
-    "outDir": "./build",
+    "outDir": "dist",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -14,5 +14,7 @@
     "allowJs": true,
     "incremental": true
   },
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "build"]
 }
+
