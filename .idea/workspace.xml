@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3b66592-d2de-4e8e-8598-5c01fa1f4e57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/environment/.env.development" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configurations/db-configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configurations/db-configuration.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/task-controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/task-controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/task-repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/task-repository.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/task-route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/task-route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +28,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="24oqcfgY2OLHWm847yhWXICmdg7" />
   <component name="ProjectViewState">
@@ -101,7 +90,8 @@
       <updated>1644307369174</updated>
       <workItem from="1644307370450" duration="2406000" />
       <workItem from="1644314095315" duration="12936000" />
-      <workItem from="1644334626661" duration="7478000" />
+      <workItem from="1644334626661" duration="10643000" />
+      <workItem from="1644397082096" duration="981000" />
     </task>
     <task id="LOCAL-00001" summary="remove node modules">
       <created>1644307515367</created>
@@ -159,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644339092126</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="eslint + full flow tasks">
+      <created>1644391097495</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1644391097495</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +171,7 @@
     <MESSAGE value="removing not used environment lines" />
     <MESSAGE value="adding local mongoDb container" />
     <MESSAGE value="add full flow task creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add full flow task creation" />
+    <MESSAGE value="eslint + full flow tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="eslint + full flow tasks" />
   </component>
 </project>

@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
     "target": "es6",
-    "noImplicitAny": true,
-    "moduleResolution": "node",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "outDir": "./build",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
     "sourceMap": true,
-    "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*"]
-    }
+    "allowJs": true,
+    "incremental": true
   },
-  "include": ["src/**/*"]
+  "exclude": ["node_modules", "build"]
 }

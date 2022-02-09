@@ -7,8 +7,10 @@ router.get('/tasks', function (req: express.Request, res: express.Response) {
     res.send(getAllTasks());
 })
 
-router.post('/tasks', function (req: express.Request, res: express.Response) {
-    res.send(saveTask(req.body as TaskDTO));
+router.post('/tasks', function (req, res) {
+    console.log(req)
+    // saveTask(req.body as TaskDTO)
+    res.send();
 })
 
 router.put('/tasks/:taskId', function (req: express.Request, res: express.Response) {
