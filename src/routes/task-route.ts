@@ -8,7 +8,7 @@ router.get('/tasks', function (req: express.Request, res: express.Response) {
 })
 
 router.post('/tasks', function (req, res) {
-    console.log(req)
+    console.log(req.body)
     // saveTask(req.body as TaskDTO)
     res.send();
 })

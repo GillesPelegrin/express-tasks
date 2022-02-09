@@ -1,7 +1,8 @@
 # Dependency directories
 node_modules/
 
-# Nuxt.js build / generate output
+# generate output
 dist
 
-
+# Itelij setup
+.idea
