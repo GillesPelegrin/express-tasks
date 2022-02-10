@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3b66592-d2de-4e8e-8598-5c01fa1f4e57" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/validation-util.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unit/validation-util.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/task-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/task-model.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,7 @@
       <workItem from="1644307370450" duration="2406000" />
       <workItem from="1644314095315" duration="12936000" />
       <workItem from="1644334626661" duration="10643000" />
-      <workItem from="1644397082096" duration="12965000" />
+      <workItem from="1644397082096" duration="13621000" />
     </task>
     <task id="LOCAL-00001" summary="remove node modules">
       <created>1644307515367</created>
@@ -201,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644436120684</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="adapt readme">
+      <created>1644476761347</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1644476761347</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,8 +227,8 @@
     <MESSAGE value="fix eslint" />
     <MESSAGE value="fixing some eslint errors" />
     <MESSAGE value="adding readme" />
-    <MESSAGE value="adapt readme" />
     <MESSAGE value="adapting tsconfig and script to run application - post body is req.body" />
-    <option name="LAST_COMMIT_MESSAGE" value="adapting tsconfig and script to run application - post body is req.body" />
+    <MESSAGE value="adapt readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="adapt readme" />
   </component>
 </project>

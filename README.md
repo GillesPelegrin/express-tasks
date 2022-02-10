@@ -33,7 +33,16 @@ So I want to adapt to a more domain unit test approach and an e2e/acceptance tes
 - [x] create your first acceptance test
 - [ ] create an acceptance test that does a full rest call ( -> so also writing and reading to a DB )
 - [ ] making test more readable and remove boiler plate code -> put in a util class
-- [ ] create unit test for your domain model
+- [ ] create unit test for your domain model / validations
+
+### Dependency Injection
+```
+You are decoupling the logic of the different layers.
+Really usefull if you make a lot of unit tests - easy to test
+
+Still finding out if this is something that i need to implement or not.
+```
+
 
 ### Models
 
@@ -70,6 +79,10 @@ The domain should be clean, if the user tries to create a weird state here it sh
 - [ ] find out how to handle errors
 - [ ] is adding DTO validation duplication of the domain validation ? - find answer
 
+
+### Translations
+
+some topic to think about
 
 ### Deploy 
 
