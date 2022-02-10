@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3b66592-d2de-4e8e-8598-5c01fa1f4e57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/validation-util.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/unit/validation-util.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unit/models/task-model.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unit/models/validation-util.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/task-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/task-model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/validation-util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/validation-util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unit/validation-util.test.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/unit/models" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -48,31 +54,88 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/unit/models" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/enviremont" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/unit/models" />
       <recent name="$PROJECT_DIR$/enviremont" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Taks.create a task" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.task validation failed because no message">
+    <configuration name="isNotNullOrUndefined (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" />
+      <test-file value="$PROJECT_DIR$/test/unit/models/validation-util.test.ts" />
       <test-names>
-        <test-name value="Taks" />
-        <test-name value="create a task" />
+        <test-name value="isNotNullOrUndefined" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="isNotNullOrUndefined (2)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/unit/models/task-model.test.ts" />
+      <test-names>
+        <test-name value="isNotNullOrUndefined" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="isNotNullOrUndefined" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/unit/validation-util.test.ts" />
+      <test-names>
+        <test-name value="isNotNullOrUndefined" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="task validation failed because no message (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/unit/models/validation-util.test.ts" />
+      <test-names>
+        <test-name value="task validation failed because no message" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="task validation failed because no message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/unit/models/task-model.test.ts" />
+      <test-names>
+        <test-name value="task validation failed because no message" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Taks.create a task" />
+        <item itemvalue="Jest.task validation failed because no message" />
+        <item itemvalue="Jest.isNotNullOrUndefined (1)" />
+        <item itemvalue="Jest.isNotNullOrUndefined (2)" />
+        <item itemvalue="Jest.task validation failed because no message (1)" />
+        <item itemvalue="Jest.isNotNullOrUndefined" />
       </list>
     </recent_temporary>
   </component>
@@ -87,7 +150,7 @@
       <workItem from="1644307370450" duration="2406000" />
       <workItem from="1644314095315" duration="12936000" />
       <workItem from="1644334626661" duration="10643000" />
-      <workItem from="1644397082096" duration="13621000" />
+      <workItem from="1644397082096" duration="15416000" />
     </task>
     <task id="LOCAL-00001" summary="remove node modules">
       <created>1644307515367</created>
@@ -208,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644476761347</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="adapt readme">
+      <created>1644477431565</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1644477431565</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,4 +1,5 @@
 import {model, Schema} from 'mongoose';
+import {isNotNullOrUndefined} from './validation-util';
 
 class Task {
     private _message: string;
@@ -7,6 +8,12 @@ class Task {
     constructor( message: string) {
         this._message = message;
         this._creationDate = new Date();
+
+        this.validate();
+    }
+
+    private validate(): void {
+        isNotNullOrUndefined(this._message, 'Message should not be null or undefined')
     }
 
     get message(): string {
