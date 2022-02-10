@@ -4,10 +4,7 @@
     <list default="true" id="a3b66592-d2de-4e8e-8598-5c01fa1f4e57" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/task-controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/task-controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/task-mapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/task-mapper.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/task-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/task-model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/task-route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/task-route.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <workItem from="1644307370450" duration="2406000" />
       <workItem from="1644314095315" duration="12936000" />
       <workItem from="1644334626661" duration="10643000" />
-      <workItem from="1644397082096" duration="11263000" />
+      <workItem from="1644397082096" duration="12965000" />
     </task>
     <task id="LOCAL-00001" summary="remove node modules">
       <created>1644307515367</created>
@@ -197,22 +194,18 @@
       <option name="project" value="LOCAL" />
       <updated>1644433156237</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="adapting tsconfig and script to run application - post body is req.body">
+      <created>1644436120684</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1644436120684</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/dto/task-dto.js" />
-        <option value="$PROJECT_DIR$/src/models/task-model.js" />
-        <option value="$PROJECT_DIR$/src/models/task-repository.js" />
-        <option value="$PROJECT_DIR$/src/routes/task-route.js" />
-        <option value="$PROJECT_DIR$/src/controllers/task-controller.js" />
-        <option value="$PROJECT_DIR$/src/controllers/task-mapper.js" />
-      </list>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remove node modules" />

@@ -25,10 +25,10 @@ Normally I write for each class a unit test. which makes refactoring a lot harde
 So I want to adapt to a more domain unit test approach and an e2e/acceptance test  at the top of the API.
 ```
 
-Pro | Contra |
+|Pro | Contra |
 | :--- |:------------|
-Easier to refactor  | Take more time to run |
-Domain becomes better present in the tests  |
+|Easier to refactor  | Take more time to run |
+|Domain becomes better present in the tests  |
 
 - [x] create your first acceptance test
 - [ ] create an acceptance test that does a full rest call ( -> so also writing and reading to a DB )
@@ -49,6 +49,8 @@ Domain becomes better present in the tests  |
 - [ ] make that controller layer can not speak to the domain layer without going through the service layer 
 - [ ] move mappers to DTO's 
 
+<img src="img.png" alt="drawing" width="400"/>
+
 ### Restfull
 
 - [ ] could add in the Api /api/v1 
@@ -59,8 +61,14 @@ Domain becomes better present in the tests  |
 
 
 ### Errors
+```
+When should we handle errros,
+The domain should be clean, if the user tries to create a weird state here it should explode.
+
+```
 
 - [ ] find out how to handle errors
+- [ ] is adding DTO validation duplication of the domain validation ? - find answer
 
 
 ### Deploy 
@@ -81,9 +89,25 @@ depends do we want to add validation here or does the validation be in the domai
 Will adapt/refactor if we introduce error handling
 ```
 
+### Repositories
+```
+A layer between the domain and the service.
+Encapsulate the querries of the database, so that you domain only should know about the functionality. 
+
+When we can change the DB technology without rewriting half of the application.
+Then we did a great job of decoupling the technology witht the domain.
+```
+- [x] implement a basic version of it
+- [ ] find out how to make all repositories consistent and the best practice
+- [ ] Should the ModelSchema be in the domain ? - find answer
+
 ### Transactions
 
 - [ ] find out how to work with transactions
+
+### Versioning
+
+- [ ] switch version from major to minor in package.json
 
 ### Devops
 

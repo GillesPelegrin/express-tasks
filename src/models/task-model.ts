@@ -9,7 +9,6 @@ class Task {
         this._creationDate = new Date();
     }
 
-
     get message(): string {
         return this._message;
     }
