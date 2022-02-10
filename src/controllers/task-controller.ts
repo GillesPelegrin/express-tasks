@@ -2,6 +2,7 @@ import TaskDTO from '../dto/task-dto';
 import TaskMapper from './task-mapper';
 import TaskRepository from '../domain/tasks/taskRepository';
 import Task from '../domain/tasks/task';
+import taskRouter from '../routes/task-router';
 
 
 export class TaskController {
@@ -14,13 +15,19 @@ export class TaskController {
         this.taskMapper = new TaskMapper();
     }
 
-    async saveTask(task: TaskDTO) {
-        await this.taskRepository.save(this.taskMapper.mapTask(task))
+    async saveTask(task: TaskDTO): Promise<TaskDTO> {
+        const newTask = await this.taskRepository.save(this.taskMapper.mapTask(task))
+        return this.taskMapper.mapTaskDTO(newTask);
     }
 
     async getAllTasks(): Promise<TaskDTO[]> {
         const tasks: Task[] = await this.taskRepository.getAll();
         return tasks.map((task: Task) => this.taskMapper.mapTaskDTO(task))
+    }
+
+    async updateTask(task: TaskDTO): Promise<TaskDTO> {
+        const updatedTask: Task = await this.taskRepository.update(this.taskMapper.mapTask(task))
+        return this.taskMapper.mapTaskDTO(updatedTask);
     }
 
 }

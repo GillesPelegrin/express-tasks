@@ -1,6 +1,6 @@
 import express = require('express');
 import bodyParser = require('body-parser')
-import taskRoute from './routes/task-route'
+import taskRoute from './routes/task-router'
 
 // should adapt env depending for development / tests / production
 // require('dotenv').config({ path: `./environment/.env.${process.env.NODE_ENV}` })
