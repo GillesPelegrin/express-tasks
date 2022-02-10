@@ -31,7 +31,7 @@ So I want to adapt to a more domain unit test approach and an e2e/acceptance tes
 |Domain becomes better present in the tests  |
 
 - [x] create your first acceptance test
-- [ ] create an acceptance test that does a full rest call ( -> so also writing and reading to a DB )
+- [x] create an acceptance test that does a full rest call ( -> so also writing and reading to a DB )
 - [ ] making test more readable and remove boiler plate code -> put in a util class
 - [x] create unit test for your domain model / validations
 
@@ -54,7 +54,7 @@ Still finding out if this is something that i need to implement or not.
 
 - [ ] find out the best how that different layers can speak to each other
 - [ ] require vs import -> find out what's best and refactor
-- [ ] wrap everything into a class and export vs functions in function export ? -> refactor
+- [x] wrap everything into a class and export vs functions in function export ? -> refactor -> went for classes
 - [ ] make that controller layer can not speak to the domain layer without going through the service layer 
 - [ ] move mappers to DTO's 
 
@@ -111,8 +111,8 @@ When we can change the DB technology without rewriting half of the application.
 Then we did a great job of decoupling the technology witht the domain.
 ```
 - [x] implement a basic version of it
-- [ ] find out how to make all repositories consistent and the best practice -> Implement Repository pattern
-- [ ] Should the ModelSchema be in the domain ? - find answer
+- [x] find out how to make all repositories consistent and the best practice -> Implement Repository pattern
+- [x] Should the ModelSchema be in the domain ? - find answer - no it should not
 
 ### Transactions
 
