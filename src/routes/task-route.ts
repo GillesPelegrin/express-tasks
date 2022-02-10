@@ -1,15 +1,15 @@
 import * as express from 'express';
-import {getAllTasks, saveTask} from '../controllers/task-controller';
 import TaskDTO from '../dto/task-dto';
+import {TaskController} from '../controllers/task-controller';
 
 const router = express.Router();
 
 router.get('/tasks', async function (req: express.Request, res: express.Response) {
-    res.send(await getAllTasks());
+    res.send(await new TaskController().getAllTasks());
 })
 
 router.post('/tasks', function (req: express.Request, res) {
-    saveTask(req.body as TaskDTO).then(() => {
+    new TaskController().saveTask(req.body as TaskDTO).then(() => {
         res.send("Task saved");
     })
 })

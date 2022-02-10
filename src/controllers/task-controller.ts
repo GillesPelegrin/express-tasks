@@ -1,16 +1,26 @@
 import TaskDTO from '../dto/task-dto';
-import {taskRepository} from '../models/task-repository';
 import TaskMapper from './task-mapper';
-import {Task} from '../models/task-model';
+import TaskRepository from '../domain/tasks/taskRepository';
+import Task from '../domain/tasks/task';
 
 
-async function saveTask(task: TaskDTO) {
-    await taskRepository().save(TaskMapper().mapTask(task))
+export class TaskController {
+
+    private taskRepository: TaskRepository;
+    private taskMapper: TaskMapper;
+
+    constructor() {
+        this.taskRepository = new TaskRepository();
+        this.taskMapper = new TaskMapper();
+    }
+
+    async saveTask(task: TaskDTO) {
+        await this.taskRepository.save(this.taskMapper.mapTask(task))
+    }
+
+    async getAllTasks(): Promise<TaskDTO[]> {
+        const tasks: Task[] = await this.taskRepository.getAll();
+        return tasks.map((task: Task) => this.taskMapper.mapTaskDTO(task))
+    }
+
 }
-
-async function getAllTasks(): Promise<TaskDTO[]> {
-    const tasks: Task[] = await taskRepository().getAll();
-    return tasks.map((task: Task) => TaskMapper().mapTaskDTO(task))
-}
-
-export {saveTask, getAllTasks}

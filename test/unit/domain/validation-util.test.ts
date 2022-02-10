@@ -1,4 +1,4 @@
-import {isNotNullOrUndefined} from '../../../src/models/validation-util';
+import {isNotNullOrUndefined} from '../../../src/domain/validation-util';
 
 test('isNotNullOrUndefined', () => {
     const ERROR_MESSAGE = 'error message';

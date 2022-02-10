@@ -33,7 +33,7 @@ So I want to adapt to a more domain unit test approach and an e2e/acceptance tes
 - [x] create your first acceptance test
 - [ ] create an acceptance test that does a full rest call ( -> so also writing and reading to a DB )
 - [ ] making test more readable and remove boiler plate code -> put in a util class
-- [ ] create unit test for your domain model / validations
+- [x] create unit test for your domain model / validations
 
 ### Dependency Injection
 ```
@@ -47,7 +47,7 @@ Still finding out if this is something that i need to implement or not.
 ### Models
 
 - [x] find out how to create a domain model
-- [ ] add validations so your model can not come in a invalid state
+- [x] add validations so your model can not come in a invalid state
 - [ ] Builder vs constructor - need to discuss as long we don't have setters
 
 ### Modules | Onion architecture
@@ -91,7 +91,7 @@ some topic to think about
 
 ### Environments
 
-- [ ] add specific env files -> test | development | production
+- [x] add specific env files -> test | development | production
 - [ ] fix that NODE_ENV is not set - for some reason 
 
 ### DTO
@@ -111,12 +111,16 @@ When we can change the DB technology without rewriting half of the application.
 Then we did a great job of decoupling the technology witht the domain.
 ```
 - [x] implement a basic version of it
-- [ ] find out how to make all repositories consistent and the best practice
+- [ ] find out how to make all repositories consistent and the best practice -> Implement Repository pattern
 - [ ] Should the ModelSchema be in the domain ? - find answer
 
 ### Transactions
 
 - [ ] find out how to work with transactions
+
+### Security
+
+- [ ] add basic authentication + adapt tests
 
 ### Versioning
 
@@ -132,3 +136,7 @@ Then we did a great job of decoupling the technology witht the domain.
 - [ ] clean up / understand your babel vs tsc, your jest that use babbel but your application use tsc
 - [ ] eslint is at the moment a pointed to a specific version -> some weird errors, check if you can switch to eslint v8.8
 - [ ] add a command in package.json so you can start your docker container mongoDB
+
+### Debugging
+
+Find a way to debug in intellij 
