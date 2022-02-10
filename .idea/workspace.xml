@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3b66592-d2de-4e8e-8598-5c01fa1f4e57" name="Changes" comment="setting mongoose fixed version - issue with referenceText">
-      <change afterPath="$PROJECT_DIR$/src/domain/base.repository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/entity.factory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/tasks/task.factory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/tasks/task.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/tasks/taskRepository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/unit/domain/task.test.ts" afterDir="false" />
+    <list default="true" id="a3b66592-d2de-4e8e-8598-5c01fa1f4e57" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/task-controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/task-controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/task-mapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/task-mapper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/task-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/tasks/task.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/task-repository.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/validation-util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/validation-util.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/task-route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/task-route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/models/task-model.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/models/validation-util.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/domain/validation-util.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/entity.factory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/entity.factory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/tasks/task.factory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/tasks/task.factory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/tasks/task.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/tasks/task.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/tasks/task.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/tasks/task.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +159,7 @@
       <workItem from="1644314095315" duration="12936000" />
       <workItem from="1644334626661" duration="10643000" />
       <workItem from="1644397082096" duration="23713000" />
-      <workItem from="1644507606890" duration="7252000" />
+      <workItem from="1644507606890" duration="8450000" />
     </task>
     <task id="LOCAL-00001" summary="remove node modules">
       <created>1644307515367</created>
@@ -312,7 +301,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644489843033</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Implementing generic Repository pattern + fixing acceptance test">
+      <created>1644515672028</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1644515672028</updated>
+    </task>
+    <task id="LOCAL-00022" summary="change Readme">
+      <created>1644515793548</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1644515793548</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +349,8 @@
     <MESSAGE value="adapt readme" />
     <MESSAGE value="adapt validation and unit tests" />
     <MESSAGE value="setting mongoose fixed version - issue with referenceText" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting mongoose fixed version - issue with referenceText" />
+    <MESSAGE value="Implementing generic Repository pattern + fixing acceptance test" />
+    <MESSAGE value="change Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="change Readme" />
   </component>
 </project>

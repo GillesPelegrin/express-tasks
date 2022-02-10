@@ -113,6 +113,7 @@ Then we did a great job of decoupling the technology witht the domain.
 - [x] implement a basic version of it
 - [x] find out how to make all repositories consistent and the best practice -> Implement Repository pattern
 - [x] Should the ModelSchema be in the domain ? - find answer - no it should not
+- [ ] find a way how we convert our schema's to a type - so we don't need to use any
 
 ### Transactions
 

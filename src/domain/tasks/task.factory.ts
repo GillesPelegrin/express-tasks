@@ -2,11 +2,10 @@ import EntityFactory from '../entity.factory';
 import Task from './task';
 
 
-export default class TaskFactory implements EntityFactory<Task> {
+export default class TaskFactory implements EntityFactory<Task, any> {
 
-    mapToEntity(schema): Task {
-        // find out how to add the creationDate from the DB without using setters !!!
-        return new Task(schema.message)
+    mapToEntity(schema: any): Task {
+        return new Task(schema.message, schema._id, schema.creationDate)
     }
 
     mapToSchema(entity: Task): any {

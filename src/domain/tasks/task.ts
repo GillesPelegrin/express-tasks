@@ -5,11 +5,11 @@ export default class Task extends Entity {
     private _message: string;
     private _creationDate: Date;
 
-    constructor(message: string) {
-        super();
+    constructor(message: string, id?: string, creationDate?: Date) {
+        super(id);
 
         this._message = message;
-        this._creationDate = new Date();
+        this._creationDate = creationDate ? creationDate : new Date();
 
         this.validate();
     }

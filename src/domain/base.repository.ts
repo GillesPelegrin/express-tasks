@@ -3,7 +3,7 @@ import EntityFactory from './entity.factory';
 
 export default abstract class BaseRepository<E extends Entity> {
 
-    constructor(protected factory: EntityFactory<E>,
+    constructor(protected factory: EntityFactory<E, any>,
                 protected model: any) {
     }
 
