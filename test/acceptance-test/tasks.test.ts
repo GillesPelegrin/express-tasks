@@ -1,26 +1,31 @@
-import {agent as request} from "supertest";
-import index from '../../src/index'
 import TaskDTO from '../../src/dto/task-dto';
+import {TaskTestClient} from './client/task.test-client';
 
 describe("Tasks", () => {
     test("CRUD task", async () => {
 
         // CREATE
-        const createRespons = await request(index).post('/tasks')
-            .send({message: 'creating new task'} as TaskDTO);
-        expect(createRespons.statusCode).toBe(200);
-        expect(createRespons.body).toStrictEqual({"message": "creating new task"});
-
+        const createRespons: TaskDTO = await TaskTestClient.createTask({message: 'creating new task'} as TaskDTO);
+        expect(createRespons).toStrictEqual({"message": "creating new task"});
 
         // GET
-        const getResponse = await request(index).get('/tasks')
-        const taskId = getResponse.body[0].id;
-        expect(getResponse.body[0].message).toStrictEqual('creating new task');
+        const getResponse: TaskDTO [] = await TaskTestClient.getAllTasks();
+        const taskId = getResponse[0].id;
+        expect(getResponse.length).toBe(1);
+        expect(getResponse[0].message).toStrictEqual('creating new task');
 
         // UPDATE
-        const updateResponse = await request(index).put(`/tasks`)
-            .send({message: 'updated task', id: taskId} as TaskDTO)
-        expect(updateResponse.body.message).toStrictEqual('updated task');
+        const updateResponse: TaskDTO = await TaskTestClient.updateTask({
+            message: 'updated task',
+            id: taskId
+        } as TaskDTO);
+        expect(updateResponse.message).toStrictEqual('updated task');
 
+        // DELETE
+        const deleteResponse = await TaskTestClient.deleteTask(taskId);
+
+        // GET ALL
+        const getResponseForDelete = await TaskTestClient.getAllTasks();
+        expect(getResponseForDelete).toStrictEqual([]);
     })
 })

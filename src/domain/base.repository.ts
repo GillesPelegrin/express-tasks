@@ -18,9 +18,13 @@ export default abstract class BaseRepository<E extends Entity> {
     }
 
     async update(entity: E): Promise<E> {
-
         const updatedSchema = await this.model.findOneAndUpdate({id: entity.id},
             this.factory.mapToSchema(entity), {new: true});
         return this.factory.mapToEntity(updatedSchema);
+    }
+
+    async delete(id: string): Promise<void> {
+        const deleteSchema = await this.model.deleteOne({_id: id});
+        return deleteSchema;
     }
 }

@@ -30,4 +30,9 @@ export class TaskController {
         return this.taskMapper.mapTaskDTO(updatedTask);
     }
 
+    async deleteTask(taskId: string): Promise<void> {
+        const deleteSchema = await this.taskRepository.delete(taskId)
+        return deleteSchema;
+    }
+
 }

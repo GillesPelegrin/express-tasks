@@ -20,8 +20,9 @@ router.put('/tasks', async function (req: express.Request, res: express.Response
 
 })
 
-router.delete('/tasks/', function (req: express.Request, res: express.Response) {
-    res.send('Deleted task with id: ' + req.params.taskId);
+router.delete('/tasks/:taskId', async function (req: express.Request, res: express.Response) {
+    const deleteSchema = await new TaskController().deleteTask(req.params.taskId);
+    res.send();
 })
 
 export default router;
