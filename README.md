@@ -120,7 +120,8 @@ Then we did a great job of decoupling the technology witht the domain.
 
 ### Transactions
 
-- [ ] find out how to work with transactions
+- [x] find out how to work with transactions -> mongoDb support multiple document transaction with ACID
+- [ ] create decorator for above classes or functions that add transactions -> @Transaction
 
 ### Security
 
