@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3b66592-d2de-4e8e-8598-5c01fa1f4e57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/error/async-error-wrapper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/error/custom-error.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/error/error-handler-middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/error/http-status-code.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/acceptance-test/error.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/base.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/db/base.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/entity.factory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/db/entity.factory.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/tasks/task.factory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/tasks/task.factory.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/tasks/taskRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/tasks/taskRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/validation-util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/validation-util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configurations/db-configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configurations/db-configuration.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/task-router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/task-router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +161,7 @@
       <workItem from="1644397082096" duration="23713000" />
       <workItem from="1644507606890" duration="18236000" />
       <workItem from="1644573626309" duration="643000" />
-      <workItem from="1644599701698" duration="5460000" />
+      <workItem from="1644599701698" duration="10358000" />
     </task>
     <task id="LOCAL-00001" summary="remove node modules">
       <created>1644307515367</created>
@@ -347,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644563799614</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="adding handling async errors">
+      <created>1644656749253</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1644656749253</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,6 +384,7 @@
     <MESSAGE value="Repository - adding any everywhere where it should be schema" />
     <MESSAGE value="Added update flow" />
     <MESSAGE value="adding delete flow + updating test with test client" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding delete flow + updating test with test client" />
+    <MESSAGE value="adding handling async errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding handling async errors" />
   </component>
 </project>

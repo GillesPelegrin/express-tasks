@@ -15,7 +15,9 @@ You will find a basic CRUD for tasks and some authorization.
 - [x] setup docker container so we can start locally a DB to test to
 - [x] find out how to connect to the DB
 - [x] write / read your first document
-- [ ] make sure that the DB is first launched before the application
+- [x] make sure that the DB is first launched before the application
+- [ ] Make sure when an endpoint is abruptly ended that the DB connection should be closed
+- [ ] When the server is closed CTRL-C it should first disconnect all the connections in the connectionPool
 
 ### Testing | Tdd | Bdd
 
@@ -76,7 +78,8 @@ The domain should be clean, if the user tries to create a weird state here it sh
 
 ```
 
-- [ ] find out how to handle errors
+- [x] find out how to handle errors
+- [ ] create convention test so you are sure no route endpoint is forgotten to be wrapped 
 - [ ] is adding DTO validation duplication of the domain validation ? - find answer
 
 

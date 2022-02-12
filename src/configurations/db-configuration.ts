@@ -1,19 +1,15 @@
-//Import the mongoose module
-const mongoose = require('mongoose');
+import mongoose, {Mongoose} from "mongoose";
 
-//Set up default mongoose connection
 const mongoDB = 'mongodb://localhost:27017';
-mongoose.connect(mongoDB, {
+const mongooseConnection: Promise<Mongoose> = mongoose.connect(mongoDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     user: process.env.DB_USER,
     pass: process.env.DB_PASSWORD
-});
+})
 
-//Get the default connection
-const dbConfiguration = mongoose.connection;
+let dbConfiguration = mongoose.connection;
+dbConfiguration.on('error', console.error.bind(console, 'MongoDB connection error:'))
+dbConfiguration.once("open", () => console.log("Connected successfully to DB"));
 
-//Bind connection to error event (to get notification of connection errors)
-dbConfiguration.on('error', console.error.bind(console, 'MongoDB connection error:'));
-
-export default mongoose;
+export {mongoose, mongooseConnection};

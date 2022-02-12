@@ -12,7 +12,8 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "allowJs": true,
-    "incremental": true
+    "incremental": true,
+    "esModuleInterop": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "build"]
