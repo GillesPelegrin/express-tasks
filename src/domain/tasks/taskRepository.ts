@@ -1,4 +1,4 @@
-import BaseRepository from '../base.repository';
+import BaseRepository from '../../infrastructure/db/base.repository';
 import TaskFactory from './task.factory';
 import Task from './task';
 import TaskModel from './task.model';

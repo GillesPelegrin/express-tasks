@@ -1,4 +1,4 @@
-import Entity from './entity';
+import Entity from '../../domain/entity';
 
 
 export default interface EntityFactory<E extends Entity, S extends any> {

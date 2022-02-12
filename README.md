@@ -32,7 +32,7 @@ So I want to adapt to a more domain unit test approach and an e2e/acceptance tes
 
 - [x] create your first acceptance test
 - [x] create an acceptance test that does a full rest call ( -> so also writing and reading to a DB )
-- [ ] making test more readable and remove boiler plate code -> put in a util class
+- [x] making test more readable and remove boiler plate code -> put in a util class / test clients
 - [x] create unit test for your domain model / validations
 
 ### Dependency Injection

@@ -1,4 +1,4 @@
-import EntityFactory from '../entity.factory';
+import EntityFactory from '../../infrastructure/db/entity.factory';
 import Task from './task';
 
 

@@ -1,4 +1,4 @@
-import Entity from './entity';
+import Entity from '../../domain/entity';
 import EntityFactory from './entity.factory';
 
 export default abstract class BaseRepository<E extends Entity> {
@@ -24,7 +24,6 @@ export default abstract class BaseRepository<E extends Entity> {
     }
 
     async delete(id: string): Promise<void> {
-        const deleteSchema = await this.model.deleteOne({_id: id});
-        return deleteSchema;
+        return await this.model.deleteOne({_id: id});
     }
 }
