@@ -1,5 +1,5 @@
-import TaskDTO from '../dto/task-dto';
-import Task from '../domain/tasks/task';
+import TaskDTO from '../../dto/task-dto';
+import Task from '../../domain/task/task';
 
 
 export default class TaskMapper {

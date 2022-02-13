@@ -1,7 +1,9 @@
 import express = require('express');
-import taskRoute from './routes/task-router'
+import taskRoute from './routes/task/task-router'
 import errorHandlerMiddleware from './infrastructure/error/error-handler-middleware';
 import {mongoose, mongooseConnection} from './configurations/db-configuration';
+import authentication from './infrastructure/auth/authentication';
+import userRouter from './routes/user/user-router';
 
 // should adapt env depending for development / tests / production
 // require('dotenv').config({ path: `./environment/.env.${process.env.NODE_ENV}` })
@@ -12,6 +14,7 @@ const app = express()
 app.use(express.json())
 
 app.use(taskRoute);
+app.use(userRouter);
 
 app.use(errorHandlerMiddleware);
 

@@ -7,3 +7,9 @@ export function isNotNullOrUndefined(object: any, errorMessage: string): void {
     }
 }
 
+export function isNotNullOrUndefinedOrEmpty(text: string, errorMessage: string): void {
+    if(text === null || text === undefined || text.trim() === '') {
+        throw new CustomError(errorMessage);
+    }
+}
+

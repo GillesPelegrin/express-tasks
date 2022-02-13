@@ -9,11 +9,16 @@ export default abstract class BaseRepository<E extends Entity> {
 
     async save(entity: E): Promise<E> {
         const newSchema = await this.model.create(this.factory.mapToSchema(entity));
-        return this.factory.mapToSchema(newSchema);
+        return this.factory.mapToEntity(newSchema);
     }
 
     getAll(): Promise<E[]> {
         return this.model.find().map((schemas: []) =>
+            schemas.map(schema => this.factory.mapToEntity(schema)));
+    }
+
+    findBy(filter: Object): Promise<E[]> {
+        return this.model.find(filter).map((schemas: []) =>
             schemas.map(schema => this.factory.mapToEntity(schema)));
     }
 

@@ -1,5 +1,5 @@
 import TaskDTO from '../../src/dto/task-dto';
-import {TaskTestClient} from './client/task.test-client';
+import {TaskTestClient} from './test-client/clients/task.test-client';
 
 describe("Tasks", () => {
     test("CRUD task", async () => {

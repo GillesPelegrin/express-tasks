@@ -126,6 +126,8 @@ Then we did a great job of decoupling the technology witht the domain.
 ### Security
 
 - [ ] add basic authentication + adapt tests
+- [x] hash password in DB 
+- [ ] username should be unique - add requirement while creating
 
 ### Versioning
 

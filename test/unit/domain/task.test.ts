@@ -1,4 +1,4 @@
-import Task from '../../../src/domain/tasks/task';
+import Task from '../../../src/domain/task/task';
 
 
 test('task validation failed because no message', () => {

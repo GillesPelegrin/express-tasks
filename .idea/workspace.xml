@@ -2,7 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3b66592-d2de-4e8e-8598-5c01fa1f4e57" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/controllers/user/user-controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/user/user-mapper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/user/user.factory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/user/user.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/user/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/user/userRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/user-d-t-o.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/user/user-router.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/acceptance-test/error-acceptance.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/acceptance-test/test-client/clients/user.test-client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/acceptance-test/test-client/test-client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/acceptance-test/test-client/test-users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/acceptance-test/user-acceptance.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/task-controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/task/task-controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/task-mapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/task/task-mapper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/tasks/task.factory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/task/task.factory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/tasks/task.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/task/task.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/tasks/task.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/task/task.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/tasks/taskRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/task/taskRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/validation-util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/validation-util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/db/base.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/db/base.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/task-router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/task/task-router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/acceptance-test/client/task.test-client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/test-client/clients/task.test-client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/acceptance-test/client/test-client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/auth/authentication.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/acceptance-test/error.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/auth-acceptane.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/task-acceptance.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unit/domain/task.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/domain/task.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +71,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/infrastructure/error" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/acceptance-test/test-client" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -51,21 +80,35 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/infrastructure/error" />
+      <recent name="$PROJECT_DIR$/test/acceptance-test/test-client" />
       <recent name="$PROJECT_DIR$/test/acceptance-test" />
-      <recent name="$PROJECT_DIR$/src/models" />
-      <recent name="$PROJECT_DIR$/test/unit/models" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/dto" />
+      <recent name="$PROJECT_DIR$/src/controllers/user" />
+      <recent name="$PROJECT_DIR$/src/routes/user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/acceptance-test/test-client/clients" />
+      <recent name="$PROJECT_DIR$/src/routes/task" />
+      <recent name="$PROJECT_DIR$/src/controllers/task" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/domain/infrastructure/db" />
-      <recent name="$PROJECT_DIR$/src/domain/infrastructure" />
-      <recent name="$PROJECT_DIR$/src/domain" />
-      <recent name="$PROJECT_DIR$/test/unit/domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Error.visualize Error">
+  <component name="RunManager" selected="Jest.User.create new user and fetch all task without getting any unauthorizated response">
+    <configuration name="Authentication.Authentication fails because no users" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/acceptance-test/auth-acceptane.test.ts" />
+      <test-names>
+        <test-name value="Authentication" />
+        <test-name value="Authentication fails because no users" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Error.visualize Error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -94,6 +137,20 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="User.create new user and fetch all task without getting any unauthorizated response" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/acceptance-test/user-acceptance.test.ts" />
+      <test-names>
+        <test-name value="User" />
+        <test-name value="create new user and fetch all task without getting any unauthorizated response" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="isNotNullOrUndefined" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -107,39 +164,13 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="task validation failed because no message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/unit/models/task-model.test.ts" />
-      <test-names>
-        <test-name value="task validation failed because no message" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="task validation should not fail" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/unit/models/task-model.test.ts" />
-      <test-names>
-        <test-name value="task validation should not fail" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.User.create new user and fetch all task without getting any unauthorizated response" />
+        <item itemvalue="Jest.Authentication.Authentication fails because no users" />
         <item itemvalue="Jest.Error.visualize Error" />
         <item itemvalue="Jest.Tasks.CRUD task" />
         <item itemvalue="Jest.isNotNullOrUndefined" />
-        <item itemvalue="Jest.task validation failed because no message" />
-        <item itemvalue="Jest.task validation should not fail" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +188,7 @@
       <workItem from="1644397082096" duration="23713000" />
       <workItem from="1644507606890" duration="18236000" />
       <workItem from="1644573626309" duration="643000" />
-      <workItem from="1644599701698" duration="11289000" />
+      <workItem from="1644599701698" duration="23276000" />
     </task>
     <task id="LOCAL-00001" summary="remove node modules">
       <created>1644307515367</created>
@@ -348,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644662325467</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Update readme">
+      <created>1644683914671</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1644683914671</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,6 +427,49 @@
     <MESSAGE value="adding delete flow + updating test with test client" />
     <MESSAGE value="adding handling async errors" />
     <MESSAGE value="Db should start now before starting the server + added command that node should close process when using CTRL C" />
-    <option name="LAST_COMMIT_MESSAGE" value="Db should start now before starting the server + added command that node should close process when using CTRL C" />
+    <MESSAGE value="Update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/infrastructure/auth/authentication.ts</url>
+          <line>7</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/routes/user/user-router.ts</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/controllers/user/user-controller.ts</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/controllers/user/user-controller.ts</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/infrastructure/db/base.repository.ts</url>
+          <line>10</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/infrastructure/db/base.repository.ts</url>
+          <line>11</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
