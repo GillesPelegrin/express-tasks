@@ -5,5 +5,5 @@ export function testUser(): UserDto {
 }
 
 export function testUserString(): string {
-    return 'James : Bond'
+    return 'James:Bond'
 }

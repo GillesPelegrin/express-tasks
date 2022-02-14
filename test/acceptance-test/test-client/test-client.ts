@@ -1,12 +1,17 @@
-import index from '../../../src';
 import {agent as request} from "supertest";
 import {testUserString} from './test-users';
 import {HttpStatusCode} from '../../../dist/infrastructure/error/http-status-code';
 
 export default abstract class TestClient {
 
-    static async getWithAuthentication<D>(url: string): Promise<D[]> {
-        const response = await request(index)
+    private index;
+
+    constructor(index) {
+        this.index = index;
+    }
+
+     async getWithAuthentication<D>(url: string): Promise<D[]> {
+        const response = await request(this.index)
             .get(url)
             .set('Authorization', `Basic ${Buffer.from(testUserString()).toString('base64')}`)
             .expect(HttpStatusCode.OK)
@@ -14,8 +19,8 @@ export default abstract class TestClient {
         return response.body as D[];
     }
 
-    static async postWithAuthentication<D>(url: string, object: Object): Promise<D> {
-        const response = await request(index)
+     async postWithAuthentication<D>(url: string, object: Object): Promise<D> {
+        const response = await request(this.index)
             .post(url)
             .send(object)
             .set('Authorization', `Basic ${Buffer.from(testUserString()).toString('base64')}`)
@@ -24,8 +29,8 @@ export default abstract class TestClient {
         return response.body as D;
     }
 
-    static async post<D>(url: string, object: Object): Promise<D> {
-        const response = await request(index)
+     async post<D>(url: string, object: Object): Promise<D> {
+        const response = await request(this.index)
             .post(url)
             .send(object)
             .expect(HttpStatusCode.OK)
@@ -33,8 +38,8 @@ export default abstract class TestClient {
         return response.body as D;
     }
 
-    static async putWithAuthentication<D>(url: string, object: Object): Promise<D> {
-        const response = await request(index)
+     async putWithAuthentication<D>(url: string, object: Object): Promise<D> {
+        const response = await request(this.index)
             .put(url)
             .send(object)
             .set('Authorization', `Basic ${Buffer.from(testUserString()).toString('base64')}`)
@@ -43,8 +48,8 @@ export default abstract class TestClient {
         return response.body as D;
     }
 
-    static async deleteWithAuthentication<D>(url: string): Promise<any> {
-        return await request(index)
+     async deleteWithAuthentication<D>(url: string): Promise<any> {
+        return await request(this.index)
             .delete(url)
             .set('Authorization', `Basic ${Buffer.from(testUserString()).toString('base64')}`)
             .expect(HttpStatusCode.OK)

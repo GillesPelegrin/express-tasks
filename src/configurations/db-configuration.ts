@@ -4,8 +4,8 @@ const mongoDB = 'mongodb://localhost:27017';
 const mongooseConnection: Promise<Mongoose> = mongoose.connect(mongoDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    user: process.env.DB_USER,
-    pass: process.env.DB_PASSWORD
+    user: 'root',
+    pass: 'rootpassword',
 })
 
 let dbConfiguration = mongoose.connection;

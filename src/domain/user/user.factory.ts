@@ -9,8 +9,8 @@ export default class UserFactory implements EntityFactory<User, any> {
 
     mapToSchema(entity: User): any {
         return {
-            username: 'James',
-            password: "132456",
+            username: entity.username,
+            password: entity.password,
             creationDate: new Date()
         }
     }
