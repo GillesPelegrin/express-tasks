@@ -1,6 +1,6 @@
 # Express Backend
 
-The purpose of this project it to learn how to implement best practices from the java world to the javascript world.
+The purpose of this project is to learn how to implement best practices from the java world to the javascript world.
 Reflect if they still make sense and refactor if needed. And of course to play with it!
 
 ## What will be implemented
@@ -37,6 +37,9 @@ So I want to adapt to a more domain unit test approach and an e2e/acceptance tes
 - [x] making test more readable and remove boiler plate code -> put in a util class / test clients
 - [x] create unit test for your domain model / validations
 
+#### Jest
+- [ ] look for something else then expect.objectContaining - i can add new field without that my tests fails
+
 ### Dependency Injection
 ```
 You are decoupling the logic of the different layers.
@@ -50,7 +53,17 @@ Still finding out if this is something that i need to implement or not.
 
 - [x] find out how to create a domain model
 - [x] add validations so your model can not come in a invalid state
-- [ ] Builder vs constructor - need to discuss as long we don't have setters
+- [x] Builder vs constructor - need to discuss as long we don't have setters
+
+```
+When using constructors as follows (field1, field2, id?, field3?, field4?)
+from the moment we add an id we can fill the other fields in that should be filled only when we get the object from the DB.
+These fields should not be set when used in the service (controller) layer.
+Or i should create something that creates a class and set them without creating setters (?) reflections like in javascript ?
+
+this is done for not creating setters and only using the constructor to set the fields.
+If wanted the Builder can be added on a later moment.
+```
 
 ### Modules | Onion architecture
 

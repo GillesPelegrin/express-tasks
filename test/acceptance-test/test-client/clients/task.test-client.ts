@@ -3,8 +3,8 @@ import TestClient from '../test-client';
 
 export class TaskTestClient extends TestClient {
 
-    constructor(index) {
-        super(index);
+    constructor(app) {
+        super(app);
     }
 
      async getAllTasks(): Promise<TaskDTO[]> {

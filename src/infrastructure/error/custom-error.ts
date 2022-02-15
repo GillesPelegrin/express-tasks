@@ -7,6 +7,6 @@ export class CustomError extends Error {
     constructor(message: string) {
         super();
         this.message = message;
-        this.status = HttpStatusCode.INTERNAL_SERVER;
+        this.status = HttpStatusCode.BAD_REQUEST;
     }
 }

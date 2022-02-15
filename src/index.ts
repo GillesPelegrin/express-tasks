@@ -15,6 +15,6 @@ mongooseConnection
 
 process.on('SIGINT', async function () {
     console.log("\nGracefully shutting down from SIGINT (Ctrl-C)");
-    await mongoose.disconnect();
+    await mongoose.connection.close()
     process.exit(0);
 });

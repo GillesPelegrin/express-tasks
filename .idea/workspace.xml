@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3b66592-d2de-4e8e-8598-5c01fa1f4e57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configurations/db-configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configurations/db-configuration.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/user/user.factory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/user/user.factory.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/user/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/user/user.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/user/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/user/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/infrastructure/auth/authentication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/auth/authentication.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/error/custom-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/error/custom-error.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/infrastructure/error/error-handler-middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/error/error-handler-middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/error/http-status-code.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/error/http-status-code.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/acceptance-test/auth-acceptane.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/auth-acceptane.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/acceptance-test/error-acceptance.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/error-acceptance.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/acceptance-test/task-acceptance.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/task-acceptance.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/acceptance-test/test-client/clients/task.test-client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/test-client/clients/task.test-client.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/acceptance-test/test-client/clients/user.test-client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/test-client/clients/user.test-client.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/acceptance-test/test-client/test-client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/test-client/test-client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/acceptance-test/test-client/test-users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/test-client/test-users.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/acceptance-test/user-acceptance.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance-test/user-acceptance.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +77,21 @@
       <recent name="$PROJECT_DIR$/src/domain/infrastructure/db" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.User.create new user and fetch all task without getting any unauthorizated response">
-    <configuration name="Authentication.Authentication fails because no users" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.Authentication.Authentication fails because did not add any user information is base64">
+    <configuration name="Authentication" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/acceptance-test/auth-acceptane.test.ts" />
+      <test-names>
+        <test-name value="Authentication" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Authentication.Authentication fails because did not add any user information is base64" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -89,69 +101,59 @@
       <test-file value="$PROJECT_DIR$/test/acceptance-test/auth-acceptane.test.ts" />
       <test-names>
         <test-name value="Authentication" />
-        <test-name value="Authentication fails because no users" />
+        <test-name value="Authentication fails because did not add any user information is base64" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Error.visualize Error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Authentication.Authentication fails because password is wrong" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/acceptance-test/error.test.ts" />
+      <test-file value="$PROJECT_DIR$/test/acceptance-test/auth-acceptane.test.ts" />
       <test-names>
-        <test-name value="Error" />
-        <test-name value="visualize Error" />
+        <test-name value="Authentication" />
+        <test-name value="Authentication fails because password is wrong" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Tasks.CRUD task" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Authentication.Authentication fails because username is wrong" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/acceptance-test/tasks.test.ts" />
+      <test-file value="$PROJECT_DIR$/test/acceptance-test/auth-acceptane.test.ts" />
       <test-names>
-        <test-name value="Tasks" />
-        <test-name value="CRUD task" />
+        <test-name value="Authentication" />
+        <test-name value="Authentication fails because username is wrong" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="User.create new user and fetch all task without getting any unauthorizated response" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Authentication.Authentication is successful" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/acceptance-test/user-acceptance.test.ts" />
+      <test-file value="$PROJECT_DIR$/test/acceptance-test/auth-acceptane.test.ts" />
       <test-names>
-        <test-name value="User" />
-        <test-name value="create new user and fetch all task without getting any unauthorizated response" />
+        <test-name value="Authentication" />
+        <test-name value="Authentication is successful" />
       </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="user-acceptance.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/test/acceptance-test/user-acceptance.test.ts" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.User.create new user and fetch all task without getting any unauthorizated response" />
-        <item itemvalue="Jest.user-acceptance.test.ts" />
-        <item itemvalue="Jest.Authentication.Authentication fails because no users" />
-        <item itemvalue="Jest.Error.visualize Error" />
-        <item itemvalue="Jest.Tasks.CRUD task" />
+        <item itemvalue="Jest.Authentication.Authentication fails because did not add any user information is base64" />
+        <item itemvalue="Jest.Authentication.Authentication is successful" />
+        <item itemvalue="Jest.Authentication.Authentication fails because password is wrong" />
+        <item itemvalue="Jest.Authentication.Authentication fails because username is wrong" />
+        <item itemvalue="Jest.Authentication" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +171,7 @@
       <workItem from="1644397082096" duration="23713000" />
       <workItem from="1644507606890" duration="18236000" />
       <workItem from="1644573626309" duration="643000" />
-      <workItem from="1644599701698" duration="29981000" />
+      <workItem from="1644599701698" duration="36076000" />
     </task>
     <task id="LOCAL-00001" summary="remove node modules">
       <created>1644307515367</created>
@@ -374,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644766268433</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fixing authentication + adapting the test that they have there own setup instead in putting everything in index.&#10;only user-acceptance tests works atm">
+      <created>1644824014892</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1644824014892</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +401,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove node modules" />
     <MESSAGE value="remove dist" />
     <MESSAGE value="add file structure + task routes" />
     <MESSAGE value="add basic acceptance test" />
@@ -417,6 +425,7 @@
     <MESSAGE value="Db should start now before starting the server + added command that node should close process when using CTRL C" />
     <MESSAGE value="Update readme" />
     <MESSAGE value="introducing authentication - all tests fail atm + still something wrong when trying to save a user" />
-    <option name="LAST_COMMIT_MESSAGE" value="introducing authentication - all tests fail atm + still something wrong when trying to save a user" />
+    <MESSAGE value="fixing authentication + adapting the test that they have there own setup instead in putting everything in index.&#10;only user-acceptance tests works atm" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing authentication + adapting the test that they have there own setup instead in putting everything in index.&#10;only user-acceptance tests works atm" />
   </component>
 </project>

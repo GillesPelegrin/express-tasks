@@ -1,5 +1,6 @@
 import UserRepository from '../../domain/user/userRepository';
 import User from '../../domain/user/user';
+import {HttpStatusCode} from '../error/http-status-code';
 
 const authentication = async (req, res, next) => {
     const b64auth = (req.headers.authorization || '').split(' ')[1] || ''
@@ -15,7 +16,7 @@ const authentication = async (req, res, next) => {
         next();
     } else {
         res.set('WWW-Authenticate', 'Basic realm="401"')
-        res.status(401).send('Unauthorized');
+        res.status(HttpStatusCode.UNAUTHORIZED).send('Unauthorized');
     }
 }
 

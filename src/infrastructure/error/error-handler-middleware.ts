@@ -6,9 +6,7 @@ function errorHandlerMiddleware(err: TypeError | CustomError, req: Request,
     let customError = err;
 
     if (!(err instanceof CustomError)) {
-        res.status(500).send(err);
-        return;
-        // customError = new CustomError('Something went wrong, please contact *** to inform about this error');
+        customError = new CustomError('Something went wrong, please contact *** to inform about this error');
     }
 
     res.status((customError as CustomError).status).send(customError);
