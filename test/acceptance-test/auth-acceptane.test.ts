@@ -8,18 +8,21 @@ import {HttpStatusCode} from '../../src/infrastructure/error/http-status-code';
 
 describe("Authentication", () => {
 
-    let app;
+    let app = createServer();
 
-    beforeEach((async () => {
-        await mongoose.connect("mongodb://localhost:27017", {useNewUrlParser: true})
-        app = createServer()
+    beforeAll((async () => {
+        await mongoose.connect("mongodb://localhost:27017",{
+            useNewUrlParser: true,
+                useUnifiedTopology: true,
+                user: 'root',
+                pass: 'rootpassword',
+        })
         await new UserTestClient(app).createUser(testUser());
     }));
 
-    afterEach(async () => {
-        await mongoose.connection.db.dropDatabase(async() => {
-            await mongoose.connection.close()
-        })
+    afterAll(async () => {
+        await mongoose.connection.db.dropDatabase();
+        await mongoose.connection.close();
     })
 
     test("Authentication fails because did not add any user information is base64", async () => {

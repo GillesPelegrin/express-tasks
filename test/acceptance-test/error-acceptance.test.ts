@@ -9,19 +9,22 @@ import {TaskTestClient} from './test-client/clients/task.test-client';
 describe("Error", () => {
 
     let taskTestClient: TaskTestClient;
-    let app;
+    const app = createServer()
 
     beforeEach((async () => {
-        await mongoose.connect("mongodb://localhost:27017", {useNewUrlParser: true})
-        app = createServer()
+        await mongoose.connect("mongodb://localhost:27017",{
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            user: 'root',
+            pass: 'rootpassword',
+        })
         await new UserTestClient(app).createUser(testUser());
         taskTestClient = new TaskTestClient(app)
     }));
 
     afterEach(async () => {
-        await mongoose.connection.db.dropDatabase(() => {
-            mongoose.connection.close()
-        })
+        await mongoose.connection.db.dropDatabase();
+        await mongoose.connection.close();
     })
 
     test("visualize Error", async () => {
