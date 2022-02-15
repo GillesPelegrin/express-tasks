@@ -1,8 +1,7 @@
 import {CustomError} from './custom-error';
-import {NextFunction, Request, Response} from 'express';
+import {Request, Response} from 'express';
 
-function errorHandlerMiddleware(err: TypeError | CustomError, req: Request,
-                                res: Response, next: NextFunction) {
+function errorHandlerMiddleware(err: TypeError | CustomError, req: Request, res: Response) {
     let customError = err;
 
     if (!(err instanceof CustomError)) {

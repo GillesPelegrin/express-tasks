@@ -16,7 +16,7 @@ export default class User extends Entity {
         this.creationDate = creationDate ? creationDate : new Date();
     }
 
-    static getSearchCriteria(username, password): Object {
+    static getSearchCriteria(username, password): { username, password } {
         return {
             username: username,
             password: this.createHashOfPassword(password)
@@ -26,7 +26,7 @@ export default class User extends Entity {
     private static createHashOfPassword(password: string): string {
         const hash = crypto.createHash('sha512');
         const data = hash.update(password.trim(), 'utf-8');
-        const hashedPassword =  data.digest('hex');
+        const hashedPassword = data.digest('hex');
         return hashedPassword;
     }
 

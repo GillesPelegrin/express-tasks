@@ -16,7 +16,6 @@ You will find a basic CRUD for tasks and some authorization.
 - [x] find out how to connect to the DB
 - [x] write / read your first document
 - [x] make sure that the DB is first launched before the application
-- [ ] Make sure when an endpoint is abruptly ended that the DB connection should be closed
 - [ ] When the server is closed CTRL-C it should first disconnect all the connections in the connectionPool
 
 ### Testing | Tdd | Bdd
@@ -69,7 +68,7 @@ If wanted the Builder can be added on a later moment.
 
 - [ ] find out the best how that different layers can speak to each other
 - [ ] require vs import -> find out what's best and refactor
-- [x] wrap everything into a class and export vs functions in function export ? -> refactor -> went for classes
+- [x] wrap everything into a class and export vs functions in function export ? -> refactor -> went for classes, most of the time
 - [ ] make that controller layer can not speak to the domain layer without going through the service layer 
 - [ ] move mappers to DTO's 
 
@@ -138,7 +137,7 @@ Then we did a great job of decoupling the technology witht the domain.
 
 ### Security
 
-- [ ] add basic authentication + adapt tests
+- [x] add basic authentication + adapt tests
 - [x] hash password in DB 
 - [ ] username should be unique - add requirement while creating
 

@@ -1,23 +1,23 @@
 import TaskDTO from '../../src/dto/task-dto';
 import {TaskTestClient} from './test-client/clients/task.test-client';
 import {UserTestClient} from './test-client/clients/user.test-client';
-import {mongoose} from '../../dist/configurations/db-configuration';
 import createServer from '../../src/app';
 import {testUser} from './test-client/test-users';
+import * as mongoose from 'mongoose';
 
 describe("Tasks", () => {
 
     let taskTestClient: TaskTestClient;
     const app = createServer()
 
-
     beforeEach((async () => {
-        await mongoose.connect("mongodb://localhost:27017",{
+        await mongoose.connect("mongodb://localhost:27017", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             user: 'root',
             pass: 'rootpassword',
         })
+
         await new UserTestClient(app).createUser(testUser());
         taskTestClient = new TaskTestClient(app)
     }));
@@ -47,7 +47,7 @@ describe("Tasks", () => {
         expect(updateResponse.message).toStrictEqual('updated task');
 
         // DELETE
-        const deleteResponse = await taskTestClient.deleteTask(taskId);
+        await taskTestClient.deleteTask(taskId);
 
         // GET ALL
         const getResponseForDelete = await taskTestClient.getAllTasks();

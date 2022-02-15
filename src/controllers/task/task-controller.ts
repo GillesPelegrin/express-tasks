@@ -2,8 +2,6 @@ import TaskDTO from '../../dto/task-dto';
 import TaskMapper from './task-mapper';
 import TaskRepository from '../../domain/task/taskRepository';
 import Task from '../../domain/task/task';
-import taskRouter from '../../routes/task/task-router';
-
 
 export class TaskController {
 

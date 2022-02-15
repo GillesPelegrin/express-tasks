@@ -23,7 +23,7 @@ router.put('/tasks', [authentication], asyncErrorWrapper(async function (req: ex
 }));
 
 router.delete('/tasks/:taskId', [authentication], asyncErrorWrapper(async function (req: express.Request, res: express.Response) {
-    const deleteSchema = await new TaskController().deleteTask(req.params.taskId);
+    await new TaskController().deleteTask(req.params.taskId);
     res.send();
 }));
 

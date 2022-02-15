@@ -17,7 +17,7 @@ export default abstract class BaseRepository<E extends Entity> {
             schemas.map(schema => this.factory.mapToEntity(schema)));
     }
 
-    findBy(filter: Object): Promise<E[]> {
+    findBy(filter: any): Promise<E[]> {
         return this.model.find(filter).map((schemas: []) =>
             schemas.map(schema => this.factory.mapToEntity(schema)));
     }

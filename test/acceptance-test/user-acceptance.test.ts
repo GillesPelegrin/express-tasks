@@ -3,9 +3,8 @@ import {TaskTestClient} from './test-client/clients/task.test-client';
 import {UserTestClient} from './test-client/clients/user.test-client';
 import {testUser} from './test-client/test-users';
 import UserDTO from '../../src/dto/user-d-t-o';
-import {mongoose} from '../../dist/configurations/db-configuration';
-import User from '../../dist/domain/user/user';
 import createServer from '../../src/app';
+import * as mongoose from 'mongoose';
 
 
 describe("User", () => {
@@ -15,7 +14,7 @@ describe("User", () => {
     const app = createServer()
 
     beforeEach((async () => {
-        await mongoose.connect("mongodb://localhost:27017",{
+        await mongoose.connect("mongodb://localhost:27017", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             user: 'root',

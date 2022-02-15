@@ -8,14 +8,14 @@ import {HttpStatusCode} from '../../src/infrastructure/error/http-status-code';
 
 describe("Authentication", () => {
 
-    let app = createServer();
+    const app = createServer();
 
     beforeAll((async () => {
-        await mongoose.connect("mongodb://localhost:27017",{
+        await mongoose.connect("mongodb://localhost:27017", {
             useNewUrlParser: true,
-                useUnifiedTopology: true,
-                user: 'root',
-                pass: 'rootpassword',
+            useUnifiedTopology: true,
+            user: 'root',
+            pass: 'rootpassword',
         })
         await new UserTestClient(app).createUser(testUser());
     }));

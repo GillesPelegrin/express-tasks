@@ -8,7 +8,7 @@ const mongooseConnection: Promise<Mongoose> = mongoose.connect(mongoDB, {
     pass: 'rootpassword',
 })
 
-let dbConfiguration = mongoose.connection;
+const dbConfiguration = mongoose.connection;
 dbConfiguration.on('error', console.error.bind(console, 'MongoDB connection error:'))
 dbConfiguration.once("open", () => console.log("Connected successfully to DB"));
 

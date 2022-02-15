@@ -10,7 +10,7 @@ export default abstract class TestClient {
         this.app = app;
     }
 
-    protected async  getWithAuthentication<D>(url: string): Promise<D[]> {
+    protected async getWithAuthentication<D>(url: string): Promise<D[]> {
         const response = await request(this.app)
             .get(url)
             .set('Authorization', `Basic ${Buffer.from(testUserString()).toString('base64')}`)
@@ -19,7 +19,7 @@ export default abstract class TestClient {
         return response.body as D[];
     }
 
-    protected async postWithAuthentication<D>(url: string, object: Object): Promise<D> {
+    protected async postWithAuthentication<D>(url: string, object: any): Promise<D> {
         const response = await request(this.app)
             .post(url)
             .send(object)
@@ -29,16 +29,16 @@ export default abstract class TestClient {
         return response.body as D;
     }
 
-    protected async post<D>(url: string, object: Object): Promise<D> {
+    protected async post<D>(url: string, object: any): Promise<D> {
         const response = await request(this.app)
             .post(url)
             .send(object)
-            // .expect(HttpStatusCode.OK)
+        // .expect(HttpStatusCode.OK)
 
         return response.body as D;
     }
 
-    protected async putWithAuthentication<D>(url: string, object: Object): Promise<D> {
+    protected async putWithAuthentication<D>(url: string, object: any): Promise<D> {
         const response = await request(this.app)
             .put(url)
             .send(object)
@@ -48,7 +48,7 @@ export default abstract class TestClient {
         return response.body as D;
     }
 
-    protected async deleteWithAuthentication<D>(url: string): Promise<any> {
+    protected async deleteWithAuthentication(url: string): Promise<any> {
         return await request(this.app)
             .delete(url)
             .set('Authorization', `Basic ${Buffer.from(testUserString()).toString('base64')}`)
