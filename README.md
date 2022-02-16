@@ -70,7 +70,8 @@ If wanted the Builder can be added on a later moment.
 - [ ] require vs import -> find out what's best and refactor
 - [x] wrap everything into a class and export vs functions in function export ? -> refactor -> went for classes, most of the time
 - [ ] make that controller layer can not speak to the domain layer without going through the service layer 
-- [ ] move mappers to DTO's 
+- [ ] move mappers to DTO's or not - entity are exposed outside there domain
+- [ ] adding multi modules in nodejs - find out
 
 <img src="img.png" alt="drawing" width="400"/>
 
